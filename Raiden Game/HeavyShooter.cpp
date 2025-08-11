@@ -8,7 +8,7 @@
 #include "ModuleTextures.h"
 #include "ModuleAudio.h"
 
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 HeavyShooter::HeavyShooter(int x, int y, int shoot_num) : Enemy(x, y)
 {

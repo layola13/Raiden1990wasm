@@ -10,7 +10,7 @@
 #include "ModulePowerUps.h"
 #include "ModuleAudio.h"
 
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 Bonus_Spaceship::Bonus_Spaceship (int x, int y, int count) : Enemy(x, y) 
 {

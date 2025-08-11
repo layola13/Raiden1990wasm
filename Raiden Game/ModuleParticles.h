@@ -7,7 +7,7 @@
 #include "p2Point.h"
 #include "ModuleCollision.h"
 
-#include "SDL_mixer/include/SDL_mixer.h"
+#include <SDL_mixer.h>
 
 #define MAX_ACTIVE_PARTICLES 500
 

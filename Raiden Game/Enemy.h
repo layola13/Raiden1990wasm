@@ -34,4 +34,4 @@ public:
 	virtual void OnCollision(Collider* collider, int num_enemy);
 };
 
-#endif  __ENEMY_H__
+#endif // __ENEMY_H__

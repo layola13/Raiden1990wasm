@@ -7,7 +7,7 @@
 #include "ModuleAudio.h"
 #include "ModuleCollision.h"
 
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 ModuleParticles::ModuleParticles()
 {

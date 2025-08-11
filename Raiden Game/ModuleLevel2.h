@@ -1,5 +1,5 @@
 #ifndef __MODULELEVEL2_H__
-#define __MODULESLEVEL2_H__
+#define __MODULELEVEL2_H__
 
 #include "Module.h"
 #include "Animation.h"

@@ -50,7 +50,7 @@ int ModuleFonts::Load(const char* texture_path, const char* characters, uint row
 
 					  
 
-	strcpy_s(fonts[id].table, characters); // table: array of chars to have the list of characters
+	strcpy(fonts[id].table, characters); // table: array of chars to have the list of characters
 	fonts[id].row_chars = (strlen(fonts[id].table)); // row_chars: amount of chars per row of the texture
 
 	uint width, height = 0;
@@ -92,7 +92,7 @@ void ModuleFonts::BlitText(int x, int y, int font_id, const char* text) const
 	int j = 0;
 	for (uint i = 0; i < len; ++i)
 	{		
-		while (j != font->row_chars)// nº of letters of the sample array
+		while (j != font->row_chars)// nï¿½ of letters of the sample array
 		{
 			if (font->table[j] == text[i])
 			{

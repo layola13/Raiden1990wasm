@@ -3,8 +3,8 @@
 
 #include "Module.h"
 #include "Globals.h"
-#include "SDL\include\SDL_scancode.h"
-#include "SDL\include\SDL_gamecontroller.h"
+#include <SDL_scancode.h>
+#include <SDL_gamecontroller.h>
 
 #define MAX_KEYS 300
 #define JOYSTICK_DEAD_ZONE 8000

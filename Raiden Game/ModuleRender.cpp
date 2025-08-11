@@ -4,7 +4,7 @@
 #include "ModuleWindow.h"
 #include "ModuleInput.h"
 #include "ModuleParticles.h"
-#include "SDL/include/SDL.h"
+#include <SDL.h>
 
 
 ModuleRender::ModuleRender() : Module()

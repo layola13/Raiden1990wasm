@@ -39,8 +39,8 @@ bool ModuleStageCompleted::Start()
 	App->player->Disable();
 
 	user_interface = "    1UP   HI-SCORE    2UP ";
-	red_font_score = App->fonts->Load("Assets/Images/Font.png", "> ?@ABCDEFGHIJKLMNOPQRSTUVWXYZ!¡?_*#$%&'()x+.-,;[].{.}./0123456789:", 3);
-	yellow_font_score =App->fonts->Load("Assets/Images/Font.png", "> ?@ABCDEFGHIJKLMNOPQRSTUVWXYZ!¡?_*#$%&'()x+.-,;[].{.}./0123456789:", 3);
+	red_font_score = App->fonts->Load("Assets/Images/Font.png", "> ?@ABCDEFGHIJKLMNOPQRSTUVWXYZ!ï¿½?_*#$%&'()x+.-,;[].{.}./0123456789:", 3);
+	yellow_font_score =App->fonts->Load("Assets/Images/Font.png", "> ?@ABCDEFGHIJKLMNOPQRSTUVWXYZ!ï¿½?_*#$%&'()x+.-,;[].{.}./0123456789:", 3);
 
 	
 
@@ -95,9 +95,9 @@ update_status ModuleStageCompleted::Update()
 	App->render->Blit(graphics, 0, 0, &background);
 
 
-	sprintf_s(App->player->score_text, 10, "%8d", App->player->score);
-	sprintf_s(App->player->high_score_text, 10, "%7d", App->player->high_score);
-	sprintf_s(App->player2->score_text, 10, "%8d", App->player2->score);
+	snprintf(App->player->score_text, 10, "%8d", App->player->score);
+	snprintf(App->player->high_score_text, 10, "%7d", App->player->high_score);
+	snprintf(App->player2->score_text, 10, "%8d", App->player2->score);
 
 	App->fonts->BlitText(0, 1, red_font_score,user_interface);
 	App->fonts->BlitText(0, 9, yellow_font_score, App->player->score_text);

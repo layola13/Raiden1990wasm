@@ -14,7 +14,7 @@
 #include "ModuleStageCompleted.h"
 
 
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 Boss::Boss(int x, int y, int shoot_num) : Enemy(x, y)
 {

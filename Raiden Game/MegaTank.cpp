@@ -8,7 +8,7 @@
 #include "ModuleTextures.h"
 #include "ModuleAudio.h"
 
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 MegaTank::MegaTank(int x, int y, int shots, bool right) : Enemy(x, y)
 {

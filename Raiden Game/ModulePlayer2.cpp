@@ -14,7 +14,7 @@
 #include "ModuleLevel1.h"
 
 #include<stdio.h>
-#include "SDL/include/SDL_timer.h"
+#include <SDL_timer.h>
 
 ModulePlayer2::ModulePlayer2()
 {
@@ -506,7 +506,7 @@ update_status ModulePlayer2::Update()
 	
 
 
-	sprintf_s(score_text, 10, "%8d", score);
+	snprintf(score_text, 10, "%8d", score);
 	
 	App->fonts->BlitText(143, 10,App->player->yellow_font_score, score_text);
 	
@@ -574,7 +574,7 @@ void ModulePlayer2::Dead() {
 	Red_Powerup_Lvl = 0;
 	M_Powerup_Lvl = 0;
 	Blue_Powerup_Lvl = 0;
-	sprintf_s(score_text, 10, "%8d", score);
+	snprintf(score_text, 10, "%8d", score);
 	
 	
 	App->player->Red_Powerup_Lvl = 0;
