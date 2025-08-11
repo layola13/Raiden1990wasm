@@ -13,12 +13,10 @@ set(EM_COMPILE_FLAGS "${EM_COMPILE_FLAGS} -s USE_SDL_MIXER=2")
 
 # Flags for linker only
 set(EM_LINKER_FLAGS "-s ALLOW_MEMORY_GROWTH=1")
-set(EM_LINKER_FLAGS "${EM_LINKER_FLAGS} -s ASSERTIONS=1")
-set(EM_LINKER_FLAGS "${EM_LINKER_FLAGS} -s SAFE_HEAP=1")
-set(EM_LINKER_FLAGS "${EM_LINKER_FLAGS} --shell-file /workspaces/Raiden1990wasm/emsdk/upstream/emscripten/src/shell.html --preload-file Assets@Assets")
+set(EM_LINKER_FLAGS "${EM_LINKER_FLAGS} --preload-file Assets@Assets")
 
 # Apply flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EM_COMPILE_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EM_COMPILE_FLAGS} -O2")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${EM_LINKER_FLAGS}")
 # --- End Emscripten Flags ---
 
